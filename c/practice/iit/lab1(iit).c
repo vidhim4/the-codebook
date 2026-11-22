@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int t,p,r;
+    float si;
+    printf("prinicpal amount :");
+    scanf("%d",&p);
+    printf("rate of interestt :");
+    scanf("%d",&r);
+    printf("time in years  :");
+    scanf("%d",&t);
+    si= (p*r*t)/100.0;
+    printf("interest is  %.2f:" ,si );
+    return 0;
+}
