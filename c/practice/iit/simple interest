@@ -1,3 +1,4 @@
+//simple interest formula
 #include <stdio.h>
 int main()
 {
