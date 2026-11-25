@@ -1,0 +1,44 @@
+//calculate transpose of square matrix in itself
+#include <stdio.h>
+int main()
+{
+	int r,c,i,j,f,m[10][10];
+	printf("enter size of matrix: ");
+	scanf("%d%d",&r,&c);
+	if (r==c)
+	{
+		int m[r][c];
+		printf("enter elements of matirx:");
+		for (i=0;i<r;i++)
+		{
+			for (j=0;j<c;j++)
+			{
+				scanf("%d",&m[i][j]);
+			}
+		}
+	
+		int t;
+		for (i=0;i<r;i++)
+		{
+			for (j=0;j<c;j++)
+			{
+				if (m[i][j] == m[j][i])
+				{
+					f=0;
+					continue;
+				}
+				else
+				{
+					t=m[i][j];
+					m[i][j]= m[j][i];
+					m[j]m[i]=t;
+				}
+			}
+		}
+	}
+	else
+	{
+		printf("not a square matrix");
+	}
+	return 0;
+}
