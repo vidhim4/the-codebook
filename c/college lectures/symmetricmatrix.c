@@ -1,3 +1,4 @@
+//check whether matrix is simmiliar
 #include <stdio.h>
 int main()
 {
